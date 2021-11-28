@@ -1,0 +1,168 @@
+body{
+  background-color: #EAEAEA;
+  font-family: 'Merriweather';
+  overflow-x: hidden;
+}
+/* card-bikes */
+.Flex {
+  display: flex;
+  margin:2%;
+}
+.card{
+  margin :auto;
+  padding: 10px;
+}
+h1{
+  margin-left: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+.scooty {
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+  padding-top: 5px;
+  font-size: 3vw;
+}
+.quote{
+  margin:0 auto 0 auto;
+}
+.bike-slide{
+  height: 500px;
+}
+.card-bind{
+  margin :20px;
+}
+.card-bind:hover .card{
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
+    transition: transform 500ms ease;
+}
+.card-bind:hover .card-title{
+color: #ff723b;
+}
+
+.btn{
+  border-color: #04AA6D;
+ color: green;
+}
+.card-bind:hover .btn{
+background-color: #4E9F3D;
+color: white;
+}
+.carousel{
+  margin: 50px 0 20px 0;
+}
+/* .card-title:hover {
+  color: ;
+} */
+.card-text{
+  font-size: 18px;
+  color: #d1343a;
+margin-bottom: 15px;
+}
+
+.checked {
+  color: orange;
+}
+
+.vertical-line {
+  height: 3px;
+  width: 180px;
+  background-color: #A3BD80;
+  margin: auto;
+}
+/* pagination */
+.center {
+  text-align: center;
+}
+.pagination {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+/* text-type-animation */
+.scooty{
+
+}
+.scooty::after{
+  content: '';
+  position: absolute;
+  width: 0.25rem;
+  height: 3rem;
+  background-color: black;
+animation: blink 500ms ease infinite;
+}
+@keyframes blink {
+  from{
+    opacity: 0;
+  }
+    to{
+      opacity: 1;
+    }
+}
+
+/* text-type-animation ends */
+/* navbar */
+.navbar {
+  background-color: #eef8e0;
+  font-weight: 600;
+  padding-left: 20px;
+  transition-property: background-color;
+  transition-duration: 2s;
+  z-index: 50;
+}
+
+.nav-item {
+  padding-left: 45px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.nav-link-color {
+  color: black;
+}
+.navbar-search{
+  padding-left: 12rem;
+}
+
+.logo-text-A {
+  color: #4E9F3D;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo-text-B {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar-btn{
+  color: white;
+  background-color: #4E9F3D;
+  padding:7px 10px 7px 10px;
+  border-radius: 5px;
+  border: none;
+}
+.navbar-btn:hover{
+  background-color: green;
+}
+
+.nav-scrolled {
+  background-color: #eef8e0;
+}
+.nav-btn-padding{
+  padding-left: 10px;
+}
