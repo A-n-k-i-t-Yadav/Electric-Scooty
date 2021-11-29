@@ -1,3 +1,10 @@
+//for laoder
+window.addEventListener('load', addloadpage);
+function addloadpage()
+{
+  let preload = document.querySelector(".preload");
+  preload.classList.add("preload-finish");
+}
 //text-typing animation
 
 const texts= ['ELECTRIC SCOOTY'];
