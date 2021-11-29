@@ -3,7 +3,77 @@ body{
   font-family: 'Merriweather';
   overflow-x: hidden;
 }
-/* card-bikes */
+/* loader svg styles */
+.car-loading {
+  position: relative;
+  top: 20%;
+}
+
+/* car animation */
+#front-tyre,
+#back-tyre {
+  animation: windmill;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#car-body {
+  animation: body;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes body {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(30deg);
+  }
+}
+
+.loader-text {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  bottom: 8%;
+}
+
+/* loader */
+.preload {
+  background-color: white;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  transition: opacity 0.05s ease;
+  margin-left: 0;
+  top:0;
+}
+
+.preload-finish {
+  opacity: 0%;
+  pointer-events: none;
+}
+@keyframes windmill {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+/* card-scooty */
 .Flex {
   display: flex;
   margin:2%;
